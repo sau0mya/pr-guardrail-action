@@ -1,0 +1,21 @@
+{
+  "name": "pr-guardrail-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "test": "jest",
+  "build": "esbuild index.js --bundle --platform=node --target=node20 --outfile=dist/index.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "@actions/github": "^9.1.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jest": "^30.5.2"
+  }
+}

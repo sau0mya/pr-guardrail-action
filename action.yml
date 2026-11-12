@@ -1,0 +1,9 @@
+name: 'PR Guardrail & Migration Linter'
+description: 'Flags risky SQL migrations, hardcoded secrets, and missing unit tests in Pull Requests'
+inputs:
+  github-token:
+    description: 'GitHub token for reading PR diffs'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
